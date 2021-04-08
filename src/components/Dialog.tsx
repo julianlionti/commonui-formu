@@ -15,7 +15,7 @@ import { useLang } from '../translate/Lang'
 
 export interface Props {
   show: boolean
-  content: string | JSX.Element
+  content: string | (() => JSX.Element)
   title: string
   onClose: (wasAccepted: boolean) => void
   loading?: boolean
@@ -38,7 +38,7 @@ export const Dialog = memo(({ show, onClose, title, content, loading }: Props) =
     if (typeof content === 'string')
       return content.split('\n').map((e) => <DialogContentText key={e}>{e}</DialogContentText>)
 
-    return content
+    return content()
   }, [content])
 
   return (

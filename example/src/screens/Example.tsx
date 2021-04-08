@@ -33,7 +33,7 @@ const Example = () => {
       </TooltipIconButton>
       <Dialog
         title="Prueba Cartel"
-        content={<p>Con custom component</p>}
+        content={() => <p>Con custom component</p>}
         show={showDialog}
         onClose={(wasAccepted) => {
           setShowDialog(false)

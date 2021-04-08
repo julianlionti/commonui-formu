@@ -1,6 +1,6 @@
 {
   "name": "commonui-formu",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Common componentes for Material UI",
   "main": "build/index.js",
   "module": "build/index.es.js",

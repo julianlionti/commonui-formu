@@ -47,10 +47,10 @@ export const Dialog = memo(({ show, onClose, title, content, loading }: Props) =
       <DialogTitle>{title}</DialogTitle>
       <DialogContent className={clases.contenido}>{renderContent()}</DialogContent>
       <DialogActions>
-        <Button onClick={() => onClose(false)} color="primary">
+        <Button disabled={loading} onClick={() => onClose(false)} color="primary">
           {t.dialog.cancel}
         </Button>
-        <Button onClick={() => onClose(true)} color="primary" autoFocus>
+        <Button disabled={loading} onClick={() => onClose(true)} color="primary" autoFocus>
           {t.dialog.accept}
         </Button>
       </DialogActions>

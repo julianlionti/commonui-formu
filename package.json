@@ -1,6 +1,6 @@
 {
   "name": "commonui-formu",
-  "version": "0.3.1",
+  "version": "0.3.32",
   "description": "Common componentes for Material UI",
   "main": "build/index.js",
   "module": "build/index.es.js",
@@ -17,7 +17,8 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "predeploy": "cd example && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "prepare": "npm run build"
   },
   "keywords": [],
   "author": "Julian Lionti",
@@ -52,7 +53,6 @@
     "axios": "^0.21.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "use-lang": "^0.5.7",
-    "use-state-with-callback": "^2.0.3"
+    "use-lang": "^0.5.7"
   }
 }
